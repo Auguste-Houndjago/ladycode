@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lady Code - Accueil</title>
+    <link rel="icon" href="pictures/logo.ico" type="image/x-icon">
+
+<!-- le cnd de tailwindcss pour ceux qui n'ont pas encore installer node js et npm -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+
+    <link href="./src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+
+    <link rel="stylesheet" href="/src/input.css">
+
+    <!-- un style css appeler directement dans le html -->
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .animate-fadeIn {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .animate-slideIn {
+            animation: slideIn 1s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+    <header class="bg-pink-400 p-5 text-center animate-fadeIn">
+        <img src="pictures/logo_ladycode.png" alt="Lady Code Logo" class="w-24 h-auto mx-auto animate-slideIn hover:scale-105 transition  border-2 border-black rounded-full  bg-yellow-500 ">
+        <h1 class="text-3xl font-bold text-white mt-4">Bienvenue sur Lady Code</h1>
+    </header>
+
+    <main class="max-w-3xl mx-auto p-5 animate-fadeIn" style="animation-delay: 0.5s;">
+        <h2 class="text-2xl font-semibold mb-4 bg-pink-500/15 rounded-sm text-center ">Découvrez le monde passionnant du code</h2>
+        <p class="mb-6 text-center">Lady Code est votre ressource ultime pour apprendre et maîtriser la programmation. Que vous soyez débutante ou développeuse expérimentée, nous avons des contenus adaptés à tous les niveaux.</p>
+        <a href="#" class="inline-block bg-pink-400 text-white py-2 px-4 rounded hover:bg-pink-500 transition duration-300 ">Commencons maintenant</a>
+
+
+        <section class="container mx-auto px-4 py-8">
+            <div class="bg-white from-blue-100 to-white border-2 border-pink-500 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out  ">
+              <div class="md:flex ">
+                <div class="md:flex-shrink-0 p-1">
+                  <img class="h-48 w-full object-cover md:w-48 border border-black rounded-md " src="/pictures/anime/ano.jpg" alt="Demon Slayer">
+                </div>
+                <div class="p-4 sm:p-8">
+                  <div class="uppercase tracking-wide text-xs sm:text-sm font-semibold">Anime Review</div>
+                  <h3 class="mt-1 text-lg sm:text-2xl leading-tight font-bold text-gray-900">Kimetsu no Yaiba (Demon Slayer)</h3>
+                  <div id="more" class="overflow-hidden text-ellipsis whitespace-nowrap sm:whitespace-normal">
+                    <p class="mt-2 text-sm sm:text-base text-black font-medium mb-2">
+                      Oh my gosh, Demon Slayer est juste trop génial ! 😍 Alors, en gros, c'est l'histoire de Tanjiro, un gars super sympa dont la famille se fait massacrer par un démon. 😱 Sa petite sœur Nezuko survit, mais elle est transformée en démon. Du coup, Tanjiro devient un chasseur de démons pour trouver un moyen de la guérir et pour botter les fesses du grand méchant Muzan ! 💪
+                    </p>
+                    
+                    <p class="bg-black w-full h-2 border-2 my-4 border-neutral-400 rounded-md shadow-md"></p>
+
+                    <span id="more-com" class="hidden">
+                      <p class="mt-4 text-sm sm:text-base text-black font-bold">
+                        Ce que j'adore, c'est comment l'anime switch entre des moments super intenses de combat (les animations sont juste wahou ! 🤯) et des scènes plus émotionnelles qui te font presque pleurer. C'est comme quand ton code marche enfin après des heures de débogage, tellement satisfaisant ! 😭🎉
+                      </p>
+                      <p class="text-sm sm:text-base text-black mt-2">
+                        Franchement, Demon Slayer, c'est le genre d'anime qui te donne envie de tout donner, que ce soit pour devenir un super chasseur de démons ou une programmeuse de ouf ! 💻🗡️
+                      </p>
+                    </span>
+                  </div>
+                  <button id="show-more" class="mt-4 text-blue-500">Voir plus</button>
+
+                  <button id="show-less" class="mt-4 text-blue-500 hidden">Voir moins</button>
+                
+                  <span id="continue" class="text-blue-300 cursor-pointer absolute bottom-2 right-2 ">Continuer</span>
+                  
+                  <div>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fas fa-star-half-alt" style="color: #FFD43B;" ></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+
+            <div>
+                <div class="border flex flex-col col-span-4 bg-blue-200  border-pink-700  p-4 rounded-md mt-4">
+
+                    <div class="flex mx-auto space-x-2">
+                      <div class="slayer w-[200px] h-[200px]  border-pink-700 rounded-md font-semibold hover:scale-105 shadow-md shadow-black  "></div>
+
+                      
+                      <div class="picture anime w-[200px] h-[200px] border border-pink-700 rounded-md font-semibold hover:scale-105 hidden md:block "> </div>
+                      
+                      <div class="cute w-[200px] h-[200px] border border-pink-700 rounded-md hover:scale-105 hidden md:block "></div>
+                    </div>
+                    <h3 class="mt-3" ><b>Kimetsu no Yaiba</b></h3>
+                    <p class="font-[600] ">Si je devais le noter, je lui donnerais un solide 8.5/10 ! Il perd juste deux points parce que parfois j'aimerais que les épisodes se concentre plus sur les evenements importants , comme les combats acharner, les momens glamour 😍.. qui durent genre 10 minutes tellement c'est bon ! 😅 Mais sérieux, si vous ne l'avez pas encore vu, qu'est-ce que vous attendez ? C'est une tuerie ! 🔥</p>
+                    <br>
+            
+                   
+                </div>
+            </div>
+
+            <div>
+                bye bye
+            </div>
+          </section>
+          <script>
+
+// une logique un peu bordelique pour le js 😅 it is my job 
+
+document.getElementById('show-more').addEventListener('click', function() {
+  toggleReview('show-more', 'show-less', false);
+  document.getElementById('continue').style.display = 'inline'; 
+});
+
+document.getElementById('show-less').addEventListener('click', function() {
+  toggleReview('show-less', 'show-more', true);
+  document.getElementById('continue').style.display = 'none'; 
+});
+
+document.getElementById('continue').addEventListener('click', function() {
+  document.getElementById('more-com').classList.remove('hidden');
+  this.style.display = 'none'; 
+});
+
+function toggleReview(currentButtonId, otherButtonId, isLess) {
+  const reviewDiv = document.getElementById('more');
+  const currentButton = document.getElementById(currentButtonId);
+  const otherButton = document.getElementById(otherButtonId);
+  const more_com =document.getElementById('more-com');
+
+  if (isLess) {
+    reviewDiv.classList.add('hidden', 'text-ellipsis', 'whitespace-nowrap');
+    more_com.classList.add('hidden')
+  } else {
+    reviewDiv.classList.remove('hidden', 'text-ellipsis', 'whitespace-nowrap');
+  }
+
+  currentButton.style.display = 'none';
+  otherButton.style.display = 'block';
+}
+
+          </script>
+  
+    </main>
+</body>
+</html>

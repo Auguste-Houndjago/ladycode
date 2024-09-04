@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.anime{
+
+    background-image: url('/pictures/anime/ano.jpg');
+    background-size: cover;
+}
+
+.cute{
+    background-image: url('/pictures/anime/cute.png');
+    background-size: cover;
+}
+
+.slayer{
+    background-image: url('/pictures/anime/slayer.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
